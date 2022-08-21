@@ -10,40 +10,61 @@
   <title>Frontend Mentor | Pricing component with toggle</title>
 </head>
 <body>
-<main>
   <h1 class="title">Our Pricing</h1>
+  <header>
   <div class="toggle">
     <h2 class="Annually">Annually</h2>
     <label class="switch">
   <input type="checkbox">
-  <span class="slider round"></span>
+  <span class="slider round left"></span>
 </label>
     <h2 class="Monthly">Monthly</h2>
   </div>
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+  </header>
+  <main>
+  <div class="basic">
+  <h3>Basic</h3>
+  <p class="price-annual-basic">&dollar;199.99</p>
+  <hr class="price-annual-basic-line">
+  <p class="price-monthly-basic hide">&dollar;19.99</p>
+  <hr class="price-monthly-basic-line hide">
+  <p>500 GB Storage</p>
+  <hr>
+  <p>2 Users Allowed</p>
+  <hr>
+  <p>Send up to 3 GB</p>
+  <hr>
+  <button class="btn-basic">Learn More</button>
+</div>
+<div class="professional">
+  <h3>Professional</h3>
+  <p class="price-annual">&dollar;249.99</p>
+  <hr>
+  <p class="price-monthly hide">&dollar;24.99</p>
+  <hr class="hide">
+  <p>1 TB Storage</p>
+  <hr>
+  <p>5 Users Allowed</p>
+  <hr>
+  <p>Send up to 10 GB</p>
+  <hr>
+  <button class="btn-professional">Learn More</button>
+</div>
+<div class="master">
+  <h3>Master</h3>
+  <p class="price-annual">&dollar;399.99</p>
+  <hr>
+  <p class="price-monthly hide">&dollar;39.99</p>
+  <hr class="hide">
+  <p>2 TB Storage</p>
+  <hr>
+  <p>10 Users Allowed</p>
+  <hr>
+  <p>Send up to 20 GB</p>
+  <hr>
+  <button class="btn-master">Learn More</button>
+</div>
 </main>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

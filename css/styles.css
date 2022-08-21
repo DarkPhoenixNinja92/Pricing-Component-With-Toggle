@@ -1,3 +1,15 @@
+body {
+  background-color: hsl(234, 14%, 74%);
+}
+
+header {
+  background-image: url('../images/bg-top.svg');
+}
+
+.basic,.professional,.master {
+  background-color: hsl(240, 78%, 98%);
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -61,4 +73,8 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;  
   justify-content: space-evenly;
+}
+
+.hide {
+  display: none;
 }
