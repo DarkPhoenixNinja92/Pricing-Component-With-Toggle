@@ -11,14 +11,13 @@ slider.addEventListener('click', function() {
 		});
 		priceAnnual.forEach(annualPrice => {
 			annualPrice.classList.add('hide');
-		})
+		});
 		annualLine.forEach(lineAnnual => {
 			lineAnnual.classList.add('hide');
-		})
+		});
 		monthlyLine.forEach(lineMonthly => {
 			lineMonthly.classList.remove('hide');
-		})
-		// monthlyLine.classList.remove('hide');
+		});
 		slider.classList.add('right');
 		slider.classList.remove('left');
 	} else if(slider.classList.contains('right')) {
@@ -27,14 +26,14 @@ slider.addEventListener('click', function() {
 		});
 		priceAnnual.forEach(annualPrice => {
 			annualPrice.classList.remove('hide');
-		})
+		});
 		annualLine.forEach(lineAnnual => {
 			lineAnnual.classList.remove('hide');
-		})
+		});
 		monthlyLine.forEach(lineMonthly => {
 			lineMonthly.classList.add('hide');
-		})
+		});
 		slider.classList.add('left');
 		slider.classList.remove('right');
 	}
-})
+});
