@@ -1,9 +1,16 @@
 body {
   background-color: hsl(234, 14%, 74%);
+  color: hsl(233, 13%, 49%);
+  font-family: 'Montserrat';
 }
 
 header {
   background-image: url('../images/bg-top.svg');
+}
+
+.title {
+  position: relative;
+  left: 3em;
 }
 
 .basic,.professional,.master {
@@ -81,6 +88,21 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;  
   justify-content: space-evenly;
+}
+
+.Annually,.Monthly {
+  color: hsl(232, 13%, 33%);
+}
+
+.price-annual,.price-monthly {
+  color: #000;
+  font-size: 35px;
+  margin-top: -5px;
+  
+}
+
+.basic p,.professional p,.master p {
+  margin-bottom: -5px;
 }
 
 .hide {
