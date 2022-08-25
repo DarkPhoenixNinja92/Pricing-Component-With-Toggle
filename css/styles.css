@@ -25,6 +25,15 @@ header {
   z-index: 50;
 }
 
+.professional {
+  color: #fff;
+  background-color: hsl(237, 63%, 64%);
+}
+
+.professional .price-annual,.professional .price-monthly {
+  color: #fff;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -70,6 +79,10 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
+input,button {
+  cursor: pointer;
+}
+
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -105,12 +118,31 @@ input:checked + .slider:before {
   margin-bottom: -5px;
 }
 
+button {
+  background-color: hsl(237, 63%, 64%);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.8em 7.5em;
+  border-radius: 5px;
+}
+
+.professional button {
+  background-color: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
 .hide {
   display: none;
 }
 
 @media (min-width: 1440px) {
+  .title {
+    left: 35%;
+  }
   main {
+    position: relative;
+    right: 6.5em;
+    top: 5em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,7 +151,28 @@ input:checked + .slider:before {
   .basic,.professional,.master {
     width: 25%;
   }
-  .basic,.professional {
-    margin-right: 2em;
+  .toggle {
+    justify-content: center;
+    position: relative;
+    right: 8em;
+  }
+  .Annually {
+    padding-right: 15px;
+  }
+  .Monthly {
+    padding-left: 15px;
+  }
+  .professional {
+    padding: 3em 1em;
+    z-index: 400;
+    position: absolute;
+  }
+  .basic,.master {
+    z-index: 5;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  .basic {
+    margin-right: 23em;
   }
 }
